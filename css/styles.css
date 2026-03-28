@@ -116,17 +116,27 @@ a {
 /* -----------hero--------------- */
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
+  display: block;
+  max-width: 496px;
+  margin: 0 auto;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -142,12 +152,39 @@ a {
 }
 
 /* -----------features--------------- */
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.features-item {
+  width: calc((100% - 24px * 3) / 4);
+}
+.features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .features-item-text {
@@ -160,6 +197,8 @@ a {
 /* -----------team--------------- */
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -169,12 +208,21 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #fff;
 }
 
+.team-item-container {
+  padding: 32px 16px;
+}
 .team-item-subtitle {
   font-weight: 500;
   font-size: 20px;
